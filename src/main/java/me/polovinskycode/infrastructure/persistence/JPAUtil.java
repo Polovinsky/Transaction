@@ -11,7 +11,7 @@ public class JPAUtil {
     public static Session getSession() {
         StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure().build();
         SessionFactory sessionFactory = new MetadataSources(registry).buildMetadata().buildSessionFactory();
-        Session session = sessionFactory.openSession();
+        Session session = null;
         if (session == null) session = sessionFactory.openSession();
         return session;
     }

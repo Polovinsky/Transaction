@@ -44,4 +44,32 @@ public class Transaction implements Serializable {
         this.event = event;
         this.due = due;
     }
+
+    public Long getId() {
+        return id;
+    }
+
+    public Long getIdAccount() {
+        return idAccount;
+    }
+
+    public Long getIdOperation() {
+        return idOperation;
+    }
+
+    public Double getAmount() {
+        return amount;
+    }
+
+    public Double getBalance() {
+        return balance;
+    }
+
+    public Date getEvent() {
+        return event;
+    }
+
+    public Date getDue() {
+        return due;
+    }
 }
