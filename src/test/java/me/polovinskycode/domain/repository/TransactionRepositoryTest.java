@@ -36,4 +36,9 @@ public class TransactionRepositoryTest {
         Transaction t = repository.findById(1L);
         assertThat("Not null value", t, notNullValue());
     }
+
+    @Test
+    public void payment_withIdAccountWithAmount_shouldTransactions() throws Exception {
+
+    }
 }

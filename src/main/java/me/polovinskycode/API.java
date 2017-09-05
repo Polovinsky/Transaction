@@ -34,7 +34,7 @@ public class API {
             });
 
             post("/v1/payments", "application/json", (q, a) -> {
-
+                
                 return "created";
             });
         });

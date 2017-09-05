@@ -36,6 +36,10 @@ public class Transaction implements Serializable {
     @Temporal(value = TIMESTAMP)
     private Date due;
 
+    Transaction() {
+
+    }
+
     public Transaction(Long idAccount, Long idOperation, Double amount, Double balance, Date event, Date due) {
         this.idAccount = idAccount;
         this.idOperation = idOperation;
