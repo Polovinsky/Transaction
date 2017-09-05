@@ -4,7 +4,7 @@ import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.time.LocalDate;
+import java.util.Date;
 
 import static javax.persistence.TemporalType.TIMESTAMP;
 
@@ -30,9 +30,18 @@ public class Transaction implements Serializable {
 
     @Column
     @Temporal(value = TIMESTAMP)
-    private LocalDate event;
+    private Date event;
 
     @Column
     @Temporal(value = TIMESTAMP)
-    private LocalDate due;
+    private Date due;
+
+    public Transaction(Long idAccount, Long idOperation, Double amount, Double balance, Date event, Date due) {
+        this.idAccount = idAccount;
+        this.idOperation = idOperation;
+        this.amount = amount;
+        this.balance = balance;
+        this.event = event;
+        this.due = due;
+    }
 }

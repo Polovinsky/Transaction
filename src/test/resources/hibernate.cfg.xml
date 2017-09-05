@@ -11,7 +11,7 @@
         <property name="hibernate.connection.password">ed262176ca1cb20922b85c6c69dab02805b3b1bdf7961d41762f64946c64f9e4</property>
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.format_sql">true</property>
-        <property name="hbm2ddl.auto">update</property>
+        <property name="hbm2ddl.auto">create</property>
 
         <mapping class="me.polovinskycode.domain.model.Transaction" />
         <mapping class="me.polovinskycode.domain.model.Operation" />
